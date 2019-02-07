@@ -7,17 +7,17 @@ Work in progress
 
 ## Uses
 
-- Node/Express/MongoDB
-- Yarn/Webpack/Babel/Prettier/ESLint
-- Google Maps APIs
-- Twilio (text messaging)
-- SendGrid (production emails)
-- Mailtrap (dev emails)
-- mLab (mongodb hosting)
-- Zeit Now (hosting service)
-- FOSSA (license and vulnerability management)
-- Greenkeeper (automated dependency management)
-- Snyk (open source security platform)
+- [Node.js](https://nodejs.org/)/[ExpressJS](https://expressjs.com/)/[MongoDB](https://www.mongodb.com/) (server-side stack)
+- [Yarn](https://yarnpkg.com/en/)/[Webpack](https://webpack.js.org/)/[Pug](https://pugjs.org/)/[Sass](https://sass-lang.com/)/[Babel](https://babeljs.io/)/[Prettier](https://prettier.io/)/[ESLint](https://eslint.org/) (front-end)
+- [Google Maps APIs](https://cloud.google.com/maps-platform/) (location services)
+- [Twilio](https://www.twilio.com/) (text messaging)
+- [SendGrid](https://sendgrid.com/) (production emails)
+- [Mailtrap](https://mailtrap.io/) (dev email testing)
+- [mLab](https://mlab.com/) (database hosting)
+- [Now by Zeit](https://zeit.co/now) (serverless hosting)
+- [FOSSA](https://fossa.io) (license and vulnerability management)
+- [Greenkeeper](https://greenkeeper.io) (automated dependency management)
+- [Snyk](https://snyk.io) (open source security platform)
 
 ## License
 
