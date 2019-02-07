@@ -1,0 +1,11 @@
+mixin loginForm
+  .container.mt-5
+    form#loginForm(action="/login" method="POST" name="loginForm")
+      h2 Login
+      .form-group
+        label(for="emailLogin") Email Address
+        input.form-control#emailLogin(type="email" name="email" required="true")
+      .form-group
+        label(for="password") Password
+        input.form-control#password(type="password" name="password" required="true")
+      input.btn.btn-primary.btn-block(type="submit" value="Login ➡")

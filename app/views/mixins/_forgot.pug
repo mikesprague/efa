@@ -1,0 +1,8 @@
+mixin forgot
+  .container.mt-5
+    form#forgotForm(action="/account/forgot", method="post" name="forgotForm")
+      h2 Forgot Password
+      .form-group
+        label(for="emailForgot") Email Address
+        input.form-control(type="email" id="emailForgot" name="email" required)
+      input.btn.btn-primary.btn-block(type="submit" value="Reset My Password ➡")

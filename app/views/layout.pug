@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    title= `${title} | ${h.siteName}`
+    link(rel='stylesheet', href='/dist/style.css')
+    //- link(rel="shortcut icon" type="image/png" href="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    block header
+      nav.navbar.navbar-expand.navbar-dark.bg-primary
+        a.navbar-brand(href="/") extrafood.app
+        ul.navbar-nav
+          //- li.nav-item.active
+          //-   a.nav-link(href="/about") About
+          if user
+            li.nav-item.active
+            a.nav-link(href="/account") Account
+            li.nav-item
+            a.nav-link(href="/logout") Logout
+          else
+            li.nav-item
+              a.nav-link(href="/login") Login
+            li.nav-item
+              a.nav-link(href="/register") Register
+
+    .container.mt-2.mb-2
+      block messages
+        if locals.flashes
+          - const categories = Object.keys(locals.flashes)
+          each category in categories
+            each message in flashes[category]
+              .alert(class=`alert-dismissible fade-show alert-${category.replace('error', 'danger')}` role="alert")= message
+                button.close(data-dismiss="alert" aria-label="Close" onclick="this.parentNode.remove()")
+                  span(aria-hidden="true") &times;
+
+    .container.mt-2
+      block content
+
+    block scripts
+      script(src=`https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&libraries=places`)
+      script(src="/dist/main.bundle.js")

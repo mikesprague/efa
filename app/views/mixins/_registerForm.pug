@@ -1,0 +1,20 @@
+mixin registerForm
+  form(action="/register" method="POST" name="registerForm")
+    .container.mt-5
+      h2 Register
+      .form-group
+        label(for="nameRegister") Name
+        input.form-control#nameRegister(type="text" name="name" required)
+      .form-group
+        label(for="emailRegister") Email Address
+        input.form-control#emailRegister(type="email" name="email" required)
+      .form-group
+        label(for="phoneRegister") Mobile Phone
+        input.form-control#phoneRegister(type="phone" name="phone" required)
+      .form-group
+        label(for="passwordRegister") Password
+        input.form-control#passwordRegister(type="password" name="password" required)
+      .form-group
+        label(for="passwordRegisterConfirm") Confirm Password
+        input.form-control#passwordRegisterConfirm(type="password" name="passwordConfirm" required)
+      input.btn.btn-primary.btn-block(type="submit" value="Register ➡")
