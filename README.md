@@ -1,6 +1,6 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/mikesprague/efa.svg?token=52287ea5cd9b8412a87913b5d24acc1fdb8bd8cdc47e077f908e5d45cf439cef&ts=1548701788568)](https://greenkeeper.io/) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikesprague%2Fefa.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikesprague%2Fefa?ref=badge_shield)
-
 # Extra Food App
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikesprague%2Fextrafood.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikesprague%2Fextrafood?ref=badge_shield)
 
 Work in progress
 
@@ -20,7 +20,7 @@ Work in progress
 
 ## License
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikesprague%2Fefa.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikesprague%2Fefa?ref=badge_large)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikesprague%2Fextrafood.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikesprague%2Fextrafood?ref=badge_large)
 
 MIT License
 
