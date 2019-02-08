@@ -9,7 +9,7 @@ const User = mongoose.model('User');
 
 exports.login = passport.authenticate('local', {
   failureRedirect: '/login',
-  failureFlash: 'Failed login, please try again',
+  failureFlash: 'Failed login, please try again ⚠️',
   successRedirect: '/loggedIn',
   successFlash: 'You have been successfully logged in 🎉',
 });
@@ -23,10 +23,10 @@ exports.logout = (req, res) => {
 exports.loggedIn = (req, res) => {
   if (hasPermission(20, req.user)) {
     res.redirect('/notifications');
-  } else {
-    res.redirect('/account');
+    return;
   }
-}
+  res.redirect('/account');
+};
 
 exports.isLoggedIn = (req, res, next) => {
   if (req.isAuthenticated()) {
