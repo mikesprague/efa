@@ -19,9 +19,7 @@ dayjs.extend(relativeTime);
 
 exports.dayjs = dayjs;
 
-exports.exclusionChoices = ['No Exclusions', 'All Meat', 'All Dairy', 'Red Meat', 'Poultry', 'Pork', 'Fish', 'Milk', 'Cheese', 'Eggs'];
-exports.requirementChoices = ['No Strict Requirements', 'Vegan ', 'Kosher', 'Halal', 'Celiac Disease'];
-exports.allergyChoices = ['No Food Allergies', 'Peanuts', 'Tree Nuts', 'Dairy', 'Eggs', 'Wheat', 'Soy', 'Seafood (including shellfish)'];
+exports.exclusionChoices = ['No Exclusions', 'Meat', 'Seafood', 'Dairy', 'Gluten', 'Nuts'];
 
 // Dump is a handy debugging function we can use to sort of "console.log" our data
 exports.dump = obj => JSON.stringify(obj, null, 2);

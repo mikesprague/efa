@@ -36,8 +36,6 @@ const userSchema = new mongoose.Schema({
     default: false,
   },
   foodExclusions: [String],
-  foodAllergies: [String],
-  dietRequirements: [String],
   resetPasswordToken: String,
   resetPasswordExpires: Date,
   permissions: {
@@ -54,22 +52,6 @@ userSchema.statics.getFoodExclusionsList = function () {
     // all mongo aggregate pipeline operators begin with $
     { $unwind: '$foodExclusions' }, // $foodExclusions note: $ denotes foodExclusions is a field on the document
     { $group: { _id: '$foodExclusions', count: { $sum: 1 } } }, // group by $tag values, place into object as property '_id', add count attributee and increase by 1 for each tag
-    { $sort: { count: -1 } }, // 1/-1 on $sort is ascending/descending
-  ]);
-};
-userSchema.statics.getFoodAllergiesList = function () {
-  return this.aggregate([
-    // all mongo aggregate pipeline operators begin with $
-    { $unwind: '$foodAllergies' }, // $foodAllergies note: $ denotes foodAllergies is a field on the document
-    { $group: { _id: '$foodAllergies', count: { $sum: 1 } } }, // group by $tag values, place into object as property '_id', add count attributee and increase by 1 for each tag
-    { $sort: { count: -1 } }, // 1/-1 on $sort is ascending/descending
-  ]);
-};
-userSchema.statics.getDietRequirementsList = function () {
-  return this.aggregate([
-    // all mongo aggregate pipeline operators begin with $
-    { $unwind: '$dietRequirements' }, // $dietRequirements note: $ denotes dietRequirements is a field on the document
-    { $group: { _id: '$dietRequirements', count: { $sum: 1 } } }, // group by $tag values, place into object as property '_id', add count attributee and increase by 1 for each tag
     { $sort: { count: -1 } }, // 1/-1 on $sort is ascending/descending
   ]);
 };

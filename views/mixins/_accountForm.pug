@@ -29,30 +29,4 @@ mixin accountForm(user = {})
                   .form-check-inline
                     input.form-check-input(type="checkbox" id=exclusion value=exclusion name="foodExclusions" checked=(foodExclusions.includes(exclusion)))
                     label.form-check-label(for=exclusion)= exclusion
-        .col-md
-          .form-group
-            //- Vegan (I eat only plant foods and plant products. I do not eat animal foods, eggs or dairy.)
-            //- Kosher (I require a special meal to be prepared for me from a Kosher kitchen.)
-            //- Halal (I require a special meal to be prepared for me from a Halal kitchen.)
-            //- Celiac Disease (I am allergic to wheat, rye, oats, or barley and any food containing gluten.)
-            - const dietRequirements = user.dietRequirements || []
-            label(for="dietRequirements") #[strong Strict Requirements]
-            ul.list-inline
-              //- h.requirementChoices comes from helpers
-              each requirement in h.requirementChoices
-                li.list-inline-item
-                  .form-check-inline
-                    input.form-check-input(type="checkbox" id=requirement value=requirement name="dietRequirements" checked=(dietRequirements.includes(requirement)))
-                    label.form-check-label(for=requirement)= requirement
-        .col-md
-          .form-group
-            - const foodAllergies = user.foodAllergies || []
-            label(for="foodAllergies") #[strong Food Allergies]
-            ul.list-inline
-              //- h.allergyChoices comes from helpers
-              each allergy in h.allergyChoices
-                li.list-inline-item
-                  .form-check-inline
-                    input.form-check-input(type="checkbox" id=allergy value=allergy name="foodAllergies" checked=(foodAllergies.includes(allergy)))
-                    label.form-check-label(for=allergy)= allergy
       input.btn.btn-primary.btn-block(type="submit" value="Update my Account ➡")
