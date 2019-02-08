@@ -12,13 +12,13 @@ mixin accountForm(user = {})
         input.form-control#phoneRegister(type="phone" name="phone" value=user.phone required)
       .row
         .col
-          h4 Food Preferences
-          .form-group
-            .form-check
-              input.form-check-input(type="checkbox" value="true" name="isFoodInsecure" id="isFoodInsecure" checked=(user.isFoodInsecure === true))
-              label.form-check-label(for="isFoodInsecure"): |I identify as #[a(href="#" target="_blank" rel="noopener") #[abbr(title="lacking reliable access to a sufficient quantity of affordable, nutritious food") food-insecure]]
+          h4 Food Exlusions
+          //- .form-group
+          //-   .form-check
+          //-     input.form-check-input(type="checkbox" value="true" name="isFoodInsecure" id="isFoodInsecure" checked=(user.isFoodInsecure === true))
+          //-     label.form-check-label(for="isFoodInsecure"): |I identify as #[a(href="#" target="_blank" rel="noopener") #[abbr(title="lacking reliable access to a sufficient quantity of affordable, nutritious food") food-insecure]]
       .row
-        .col-md
+        .col
           .form-group
             - const foodExclusions = user.foodExclusions || []
             label(for="foodExclusions") #[strong Exlcusions]
