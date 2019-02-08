@@ -26,9 +26,8 @@ const config = {
   },
   mode,
   output: {
-    path: path.resolve(__dirname, 'app/public', 'dist'),
+    path: path.resolve(__dirname, 'app', 'public', 'dist'),
     // we can use "substitutions" in file names like [name] and [hash]
-    // name will be `app` because that is what we used above in our entry
     filename: '[name].bundle.js',
   },
   module: {
