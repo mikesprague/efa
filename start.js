@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const fs = require('fs');
 const http = require('http');
 require('dotenv').config();
 
@@ -13,9 +12,7 @@ mongoose.connection.on('error', (err) => {
   console.error(`🙅 🚫 → ${err.message}`);
 });
 
-// require('./app/models/Store');
 require('./app/models/User');
-// require('./app/models/Review');
 
 const app = require('./app/index');
 
