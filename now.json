@@ -11,19 +11,17 @@
     }
   ],
   "env": {
-    "SECRET": "@my-secret-name",
-    "NODE_ENV": "production",
     "MONGO_DB_URL": "@mongo-db-url",
     "MAIL_USER": "@mail-user",
     "MAIL_PASS": "@mail-pass",
     "MAIL_HOST": "@mail-host",
     "MAIL_PORT": "@mail-port",
     "GOOGLE_MAPS_API_KEY": "@google-maps-api-key",
-    "PORT": 3000,
+    "PORT": "3000",
     "APP_SESSION_SECRET": "@app-session-secret",
     "APP_SESSION_KEY": "@app-session-key",
     "TWILIO_AUTH_TOKEN": "@twilio-auth-token",
-    "TWILIO_ACCOUNT_ID": "@twilio-account-id",
+    "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
     "TWILIO_NUMBER": "@twilio-number",
     "BUGSNAG_KEY": "@bugsnag-key"
   }
