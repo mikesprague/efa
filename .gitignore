@@ -89,3 +89,5 @@ variables.env.heroku
 *.code-workspace
 
 .env.sample
+
+public/dist
