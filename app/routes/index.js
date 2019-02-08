@@ -24,6 +24,4 @@ router.post('/account/reset/:token', authController.confirmedPasswords, catchErr
 
 router.get('/notifications', authController.isLoggedIn, userController.notifications);
 
-// router.get('/api/search', catchErrors(storeController.searchStores));
-
 module.exports = router;
