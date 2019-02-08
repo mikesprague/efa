@@ -15,10 +15,12 @@ const routes = require('./routes/index');
 const helpers = require('./helpers/helpers');
 const errorHandlers = require('./helpers/errorHandlers');
 
+// configure Bugsnag
 const bugsnagClient = bugsnag(process.env.BUGSNAG_KEY);
 bugsnagClient.use(bugsnagExpress);
 const bugsnagMiddleware = bugsnagClient.getPlugin('express');
 
+// setup passport
 require('./helpers/passport');
 
 // create our Express app
