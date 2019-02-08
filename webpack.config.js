@@ -66,8 +66,8 @@ const config = {
                   purgecss({
                     content: ['./app/views/**/*.pug', './app/js/**/*.js'],
                     fontFace: true,
-                    // whitelistPatterns: [/pattern1/, /pattern2/],
-                    // whitelistPatternsChildren: [/pattern1/, /pattern2/],
+                    whitelistPatterns: [/alert/],
+                    whitelistPatternsChildren: [/alert/],
                   }),
                 ];
               },
