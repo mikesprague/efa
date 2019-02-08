@@ -26,8 +26,10 @@ require('./helpers/passport');
 // create our Express app
 const app = express();
 
-// setup bugsnag middleware
-app.use(bugsnagMiddleware.requestHandler);
+if (process.env.NODE_ENV === 'production') {
+  // setup bugsnag middleware
+  app.use(bugsnagMiddleware.requestHandler);
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views')); // this is the folder where we keep our pug files
@@ -69,7 +71,9 @@ app.use((req, res, next) => {
   res.locals.flashes = req.flash();
   res.locals.user = req.user || null;
   res.locals.currentPath = req.path;
-  res.locals.bugsnagClient = bugsnagClient;
+  if (process.env.NODE_ENV === 'production') {
+    res.locals.bugsnagClient = bugsnagClient;
+  }
   next();
 });
 
@@ -96,7 +100,9 @@ if (app.get('env') === 'development') {
 
 // production error handler
 app.use(errorHandlers.productionErrors);
-app.use(bugsnagMiddleware.errorHandler);
+if (process.env.NODE_ENV === 'production') {
+  app.use(bugsnagMiddleware.errorHandler);
+}
 
 // done! we export it so we can start the site in start.js
 module.exports = app;
