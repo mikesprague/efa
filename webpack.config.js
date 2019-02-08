@@ -12,7 +12,7 @@ const mode = process.env.NODE_ENV || 'production';
 
 const config = {
   entry: [
-    './app/public/javascripts/main.js',
+    './public/javascripts/main.js',
   ],
   devtool: 'source-map',
   optimization: {
@@ -26,7 +26,7 @@ const config = {
   },
   mode,
   output: {
-    path: path.resolve(__dirname, 'app', 'public', 'dist'),
+    path: path.resolve(__dirname, 'public', 'dist'),
     // we can use "substitutions" in file names like [name] and [hash]
     filename: '[name].bundle.js',
   },
@@ -63,7 +63,7 @@ const config = {
                   autoprefixer(),
                   cssnano({ preset: 'default' }),
                   purgecss({
-                    content: ['./app/views/**/*.pug', './app/js/**/*.js'],
+                    content: ['./views/**/*.pug', './js/**/*.js'],
                     fontFace: true,
                     whitelistPatterns: [/alert/],
                     whitelistPatternsChildren: [/alert/],

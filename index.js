@@ -1,5 +1,6 @@
 const express = require('express');
 const session = require('express-session');
+const http = require('http');
 const mongoose = require('mongoose');
 const MongoStore = require('connect-mongo')(session);
 const path = require('path');
@@ -10,6 +11,20 @@ const flash = require('connect-flash');
 const expressValidator = require('express-validator');
 const bugsnag = require('@bugsnag/js');
 const bugsnagExpress = require('@bugsnag/plugin-express');
+
+require('dotenv').config();
+
+mongoose.set('useCreateIndex', true);
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+
+mongoose.connect(process.env.MONGO_DB_URL);
+mongoose.Promise = global.Promise;
+mongoose.connection.on('error', (err) => {
+  console.error(`🙅 🚫 → ${err.message}`);
+});
+
+require('./models/User');
 
 const routes = require('./routes/index');
 const helpers = require('./helpers/helpers');
@@ -104,5 +119,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(bugsnagMiddleware.errorHandler);
 }
 
-// done! we export it so we can start the site in start.js
-module.exports = app;
+app.set('port', process.env.PORT || 3000);
+const server = app.listen(app.get('port'), () => {
+  console.info(`Express running → PORT ${server.address().port}`);
+});

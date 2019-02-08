@@ -89,5 +89,3 @@ variables.env.heroku
 *.code-workspace
 
 .env.sample
-app/data
-dev
