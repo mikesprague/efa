@@ -119,7 +119,9 @@ if (process.env.NODE_ENV === 'production') {
   app.use(bugsnagMiddleware.errorHandler);
 }
 
-app.set('port', process.env.PORT || 3000);
-const server = app.listen(app.get('port'), () => {
+const port = process.env.PORT || 3000;
+
+const server = http.createServer(app);
+server.listen(port, () => {
   console.info(`Express running → PORT ${server.address().port}`);
 });
