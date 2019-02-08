@@ -58,7 +58,7 @@ exports.developmentErrors = (err, req, res, next) => {
     'text/html': () => {
       res.render('error', errorDetails);
     }, // Form Submit, Reload the page
-    'application/json': () => res.json(errorDetails) // Ajax call, send JSON back
+    'application/json': () => res.json(errorDetails), // Ajax call, send JSON back
   });
 };
 
@@ -70,8 +70,9 @@ exports.developmentErrors = (err, req, res, next) => {
 */
 exports.productionErrors = (err, req, res, next) => {
   res.status(err.status || 500);
+  res.locals.bugsnagClient.notify(err);
   res.render('error', {
     message: err.message,
-    error: {}
+    error: {},
   });
 };
