@@ -7,13 +7,14 @@
     "npm": ">= 5.x",
     "yarn": ">= 1.x"
   },
+  "license": "MIT",
   "scripts": {
     "assets": "webpack --display-max-modules 0 --color true",
     "assets:watch": "yarn assets -w",
     "build": "yarn assets -p",
     "build:dev": "yarn assets -d",
     "dev": "concurrently 'yarn watch' 'yarn assets:watch -d --color true --display minimal' --names '🖥 ,📦 ' --prefix '[{name}] '",
-    "start": "node ./start.js",
+    "start": "yarn assets -p && node ./start.js",
     "watch": "nodemon ./start.js --ignore app/public/",
     "watch:debug": "nodemon ./start.js --inspect --ignore app/public/"
   },
