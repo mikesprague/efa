@@ -15,6 +15,7 @@
     "build:dev": "yarn assets -d",
     "dev": "concurrently 'yarn watch' 'yarn assets:watch -d --color true --display minimal' --names '🖥 ,📦 ' --prefix '[{name}] '",
     "heroku": "git push heroku master",
+    "postinstall": "yarn build",
     "start": "node ./index.js",
     "watch": "nodemon ./index.js --ignore public/",
     "watch:debug": "nodemon ./index.js --inspect --ignore public/"
