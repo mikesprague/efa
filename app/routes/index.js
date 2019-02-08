@@ -22,7 +22,7 @@ router.post('/account/forgot', userController.validateEmail, catchErrors(authCon
 router.get('/account/reset/:token', catchErrors(authController.reset));
 router.post('/account/reset/:token', authController.confirmedPasswords, catchErrors(authController.update));
 
-router.get('/notifications', authController.isLoggedIn, userController.notifications)
+router.get('/notifications', authController.isLoggedIn, userController.notifications);
 
 // router.get('/api/search', catchErrors(storeController.searchStores));
 
