@@ -14,7 +14,8 @@
     "build": "yarn assets -p",
     "build:dev": "yarn assets -d",
     "dev": "concurrently 'yarn watch' 'yarn assets:watch -d --color true --display minimal' --names '🖥 ,📦 ' --prefix '[{name}] '",
-    "start": "yarn assets -p && node ./start.js",
+    "heroku": "yarn assets -p && git push heroku master",
+    "start": "node ./start.js",
     "watch": "nodemon ./start.js --ignore app/public/",
     "watch:debug": "nodemon ./start.js --inspect --ignore app/public/"
   },
