@@ -1,3 +1,10 @@
+// import * as maps from '@google/maps';
+
+// const googleMapsClient = maps.createClient({
+//   key: process.env.GOOGLE_MAPS_API_KEY,
+//   Promise,
+// });
+
 function autocomplete(addressInput, latInput, lngInput) {
   if (!addressInput) return;
 

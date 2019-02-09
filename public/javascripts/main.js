@@ -35,3 +35,14 @@ const initAutoComplete = () => {
 const initFocusEmail = () => {
   $('#emailLogin').focus();
 };
+
+
+// hacky solution (should replace)
+// allows for one script one all pages
+try {
+  initAllCheckboxes();
+  initAutoComplete();
+  initFocusEmail();
+} catch (e) {
+  // ignore
+}
