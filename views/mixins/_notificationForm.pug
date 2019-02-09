@@ -1,3 +1,20 @@
-mixin notificationForm(user = {}, notification = {})
-    form#notificationForm(action="/notifications" method="post" name="notificationForm")
+mixin notificationForm(notification = {})
+  form#notificationForm(action=(notification._id ? `/notifications/${notification._id}/edit` : "/notifications/add") method="post" name="notificationForm" enctype="multipart/form-data")
+    .container.mt-5
       .form-group
+        label(for="nameRegister") Name
+        input.form-control#nameRegister(type="text" name="name" required)
+      .form-group
+        label(for="photo") Photo
+        input#photo.form-control-file(type="file" name="photo" accept="image/gif, image/png, image/jpeg")
+        //- if notification.photo
+        //-   img(src=`/uploads/${notification.photo}`, alt=notification.name width=200)
+      .form-group
+        label(for="address") Location
+        input#address.form-control(type="text" name="location[address]" value=(notification.location && notification.location.address))
+      .form-group.d-none
+        label(for="lng") Address Lng
+        input#lng.form-control(type="text" name="location[coordinates][0]" value=(notification.location && notification.location.coordinates[0]) required)
+      .form-group.d-none
+        label(for="lat") Address Lat
+        input#lat.form-control(type="text" name="location[coordinates][1]" value=(notification.location && notification.location.coordinates[1]) required)
