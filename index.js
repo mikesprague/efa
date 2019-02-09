@@ -14,6 +14,12 @@ const bugsnagExpress = require('@bugsnag/plugin-express');
 
 require('dotenv').config();
 
+// create our Express app
+const app = express();
+
+// set the port for the app
+const port = process.env.PORT || 3000;
+
 mongoose.set('useCreateIndex', true);
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
@@ -38,9 +44,6 @@ const bugsnagMiddleware = bugsnagClient.getPlugin('express');
 // setup passport
 require('./helpers/passport');
 
-// create our Express app
-const app = express();
-
 if (process.env.NODE_ENV === 'production') {
   // setup bugsnag middleware
   app.use(bugsnagMiddleware.requestHandler);
@@ -48,23 +51,23 @@ if (process.env.NODE_ENV === 'production') {
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views')); // this is the folder where we keep our pug files
-app.set('view engine', 'pug'); // we use the engine pug, mustache or EJS work great too
+app.set('view engine', 'pug'); // we use the pug engine
 
 // serves up static files from the public folder. Anything in public/ will just be served up as the file it is
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Takes the raw requests and turns them into usable properties on req.body
+// takes the raw requests and turns them into usable properties on req.body
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Exposes a bunch of methods for validating data. Used heavily on userController.validateRegister
+// exposes a bunch of methods for validating data. Used heavily on userController.validateRegister
 app.use(expressValidator());
 
 // populates req.cookies with any cookies that came along with the request
 app.use(cookieParser());
 
-// Sessions allow us to store data on visitors from request to request
-// This keeps users logged in and allows us to send flash messages
+// sessions allow us to store data on visitors from request to request
+// this keeps users logged in and allows us to send flash messages
 app.use(session({
   secret: process.env.APP_SESSION_SECRET,
   key: process.env.APP_SESSION_KEY,
@@ -118,8 +121,6 @@ app.use(errorHandlers.productionErrors);
 if (process.env.NODE_ENV === 'production') {
   app.use(bugsnagMiddleware.errorHandler);
 }
-
-const port = process.env.PORT || 3000;
 
 const server = http.createServer(app);
 server.listen(port, () => {
