@@ -6,7 +6,7 @@ const { catchErrors } = require('../helpers/errorHandlers');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.render('index');
+  res.render('index', { title: '' });
 });
 
 router.get('/register', userController.registerForm);

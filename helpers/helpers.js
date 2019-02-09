@@ -28,4 +28,4 @@ exports.dump = obj => JSON.stringify(obj, null, 2);
 exports.staticMap = ([lng, lat]) => `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=14&size=800x150&key=${process.env.GOOGLE_MAPS_API_KEY}&markers=${lat},${lng}&scale=2`;
 
 // Some details about the site
-exports.siteName = 'Extra Food Notifications';
+exports.siteName = 'Extra Food App';

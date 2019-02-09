@@ -1,4 +1,5 @@
 import '../sass/style.scss';
+import { register } from 'register-service-worker';
 import { $, $$ } from './modules/bling';
 import autocomplete from './modules/autocomplete';
 
@@ -26,8 +27,6 @@ const initFoodPrefCheckboxes = ((checkboxSelector) => {
 
 const initAllCheckboxes = () => {
   initFoodPrefCheckboxes('foodExclusions');
-  initFoodPrefCheckboxes('dietRequirements');
-  initFoodPrefCheckboxes('foodAllergies');
 };
 
 const initAutoComplete = () => {
@@ -37,3 +36,31 @@ const initAutoComplete = () => {
 const initFocusEmail = () => {
   $('#emailLogin').focus();
 };
+
+function registerServiceWorker() {
+  register('/service-worker.js', {
+    ready() {
+      console.log('Service worker is active.');
+    },
+    registered(registration) {
+      console.log('Service worker has been registered.', registration);
+    },
+    cached(registration) {
+      console.log('Content has been cached for offline use.', registration);
+    },
+    updatefound(registration) {
+      console.log('New content is downloading.', registration);
+    },
+    updated(registration) {
+      console.log('New content is available; please refresh.', registration);
+    },
+    offline() {
+      console.info('No internet connection found. App is running in offline mode.');
+    },
+    error(error) {
+      console.error('Error during service worker registration:', error);
+    },
+  });
+}
+
+registerServiceWorker();
