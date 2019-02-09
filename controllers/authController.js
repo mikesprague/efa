@@ -21,6 +21,7 @@ exports.logout = (req, res) => {
 };
 
 exports.loggedIn = (req, res) => {
+  req.flash('success', 'You have been successfully logged in 🎉');
   if (hasPermission(20, req.user)) {
     res.redirect('/notifications');
     return;
@@ -102,6 +103,6 @@ exports.update = async (req, res) => {
   user.resetPasswordExpires = undefined;
   const updateUser = await user.save();
   await req.login(updateUser);
-  req.flash('success', 'Your password has been successfully reset and you are now logged in 🕺');
+  req.flash('success', 'Your password has been successfully reset and you are now logged in 🎉');
   return res.redirect('/');
 };

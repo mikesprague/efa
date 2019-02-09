@@ -104,7 +104,9 @@ exports.notifications = (req, res) => {
 };
 
 exports.account = (req, res) => {
-  res.render('account', { title: 'Edit Your Account' });
+  res.render('account', {
+    title: 'Edit Your Account',
+  });
 };
 
 exports.updateAccount = async (req, res) => {
