@@ -1,6 +1,7 @@
 import '../sass/style.scss';
 import { $, $$ } from './modules/bling';
 import autocomplete from './modules/autocomplete';
+import * as image from './modules/image';
 
 const initFoodPrefCheckboxes = ((checkboxSelector) => {
   const firstCheckBox = $(`input[name="${checkboxSelector}"]`);
@@ -25,24 +26,49 @@ const initFoodPrefCheckboxes = ((checkboxSelector) => {
 });
 
 const initAllCheckboxes = () => {
-  initFoodPrefCheckboxes('foodExclusions');
+  // hacky solution (should replace)
+  // allows for one script one all pages
+  try {
+    initFoodPrefCheckboxes('foodExclusions');
+  } catch (e) {
+    // ignore
+  }
 };
 
 const initAutoComplete = () => {
-  autocomplete($('#address'), $('#lat'), $('#lng'));
+  // hacky solution (should replace)
+  // allows for one script one all pages
+  try {
+    autocomplete($('#address'), $('#lat'), $('#lng'));
+  } catch (e) {
+    // ignore
+  }
 };
 
 const initFocusEmail = () => {
-  $('#emailLogin').focus();
+  // hacky solution (should replace)
+  // allows for one script one all pages
+  try {
+    $('#emailLogin').focus();
+  } catch (e) {
+    // ignore
+  }
 };
 
+const initNotificationPhoto = () => {
+  try {
+    const notificationPhoto = document.querySelector('#photo');
+    notificationPhoto.on('change', async function () {
+      const imageData = await image.getImageFromFileInput(this);
+      // console.log(imageData);
+      image.setPreviewImage('.photo-preview', imageData[0]);
+    });
+  } catch (e) {
+    // ignore
+  }
+};
 
-// hacky solution (should replace)
-// allows for one script one all pages
-try {
-  initAllCheckboxes();
-  initAutoComplete();
-  initFocusEmail();
-} catch (e) {
-  // ignore
-}
+initAllCheckboxes();
+initAutoComplete();
+initFocusEmail();
+initNotificationPhoto();

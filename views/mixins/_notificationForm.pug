@@ -8,7 +8,7 @@ mixin notificationForm(notification = {})
         label(for="photo") Photo
         input#photo.form-control-file(type="file" name="photo" accept="image/gif, image/png, image/jpeg")
         //- if notification.photo
-        //-   img(src=`/uploads/${notification.photo}`, alt=notification.name width=200)
+        img.photo-preview(src=`${notification.photo ? notification.photo : ''}`, alt="" width=200)
       .form-group
         label(for="address") Location
         input#address.form-control(type="text" name="location[address]" value=(notification.location && notification.location.address))
