@@ -1476,13 +1476,13 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-autoprefixer@^9.4.7:
-  version "9.4.7"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.4.7.tgz#f997994f9a810eae47b38fa6d8a119772051c4ff"
-  integrity sha512-qS5wW6aXHkm53Y4z73tFGsUhmZu4aMPV9iHXYlF0c/wxjknXNHuj/1cIQb+6YH692DbJGGWcckAXX+VxKvahMA==
+autoprefixer@^9.4.8:
+  version "9.4.8"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.4.8.tgz#575dcdfd984228c7bccbc08c5fe53f0ea6915593"
+  integrity sha512-DIhd0KMi9Nql3oJkJ2HCeOVihrXFPtWXc6ckwaUNwliDOt9OGr0fk8vV8jCLWXnZc1EXvQ2uLUzGpcPxFAQHEQ==
   dependencies:
     browserslist "^4.4.1"
-    caniuse-lite "^1.0.30000932"
+    caniuse-lite "^1.0.30000938"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
     postcss "^7.0.14"
@@ -1980,10 +1980,10 @@ caniuse-lite@^1.0.30000928:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000928.tgz#805e828dc72b06498e3683a32e61c7507fd67b88"
   integrity sha512-aSpMWRXL6ZXNnzm8hgE4QDLibG5pVJ2Ujzsuj3icazlIkxXkPXtL+BWnMx6FBkWmkZgBHGUxPZQvrbRw2ZTxhg==
 
-caniuse-lite@^1.0.30000932:
-  version "1.0.30000934"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000934.tgz#4f2d749f51e9e2d4e9b182f8f121d26ec4208e8d"
-  integrity sha512-o7yfZn0R9N+mWAuksDsdLsb1gu9o//XK0QSU0zSSReKNRsXsFc/n/psxi0YSPNiqlKxImp5h4DHnAPdwYJ8nNA==
+caniuse-lite@^1.0.30000938:
+  version "1.0.30000938"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000938.tgz#b64bf1427438df40183fce910fe24e34feda7a3f"
+  integrity sha512-ekW8NQ3/FvokviDxhdKLZZAx7PptXNwxKgXtnR5y+PR3hckwuP3yJ1Ir+4/c97dsHNqtAyfKUGdw8P4EYzBNgw==
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -3142,10 +3142,10 @@ domhandler@^2.3.0:
   dependencies:
     domelementtype "1"
 
-dompurify@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-1.0.9.tgz#9d5623df2ec670853e37ff11a5e19bc8990b3b22"
-  integrity sha512-lt9f3A3RO1OCNaWdA+s/k7YVn0Typ5MbAKmX94PLCZbs8wLNccX3Bj4xXA7GLKOoDb/MeVoAoeIJarZD1JUnjg==
+dompurify@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-1.0.10.tgz#18d7353631c86ee25049e38fbca8c6b2c5a2af87"
+  integrity sha512-huhl3DSWX5LaA7jDtnj3XQdJgWW1wYouNW7N0drGzQa4vEUSVWyeFN+Atx6HP4r5cang6oQytMom6I4yhGJj5g==
 
 domutils@1.5.1:
   version "1.5.1"
@@ -3421,10 +3421,10 @@ eslint-visitor-keys@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
 
-eslint@^5.14.0:
-  version "5.14.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.14.0.tgz#380739df2489dd846baea008638b036c1e987974"
-  integrity sha512-jrOhiYyENRrRnWlMYANlGZTqb89r2FuRT+615AabBoajhNjeh9ywDNlh2LU9vTqf0WYN+L3xdXuIi7xuj/tK9w==
+eslint@^5.14.1:
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.14.1.tgz#490a28906be313685c55ccd43a39e8d22efc04ba"
+  integrity sha512-CyUMbmsjxedx8B0mr79mNOqetvkbij/zrXnFeK2zc3pGRn3/tibjiNAv/3UxFEyfMDjh+ZqTrJrEGBFiGfD5Og==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.9.1"
@@ -5792,10 +5792,10 @@ mongoose-mongodb-errors@^0.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-mongodb-errors/-/mongoose-mongodb-errors-0.0.2.tgz#7feacb8c901b5f899c616652337b2f499717291c"
   integrity sha1-f+rLjJAbX4mcYWZSM3svSZcXKRw=
 
-mongoose@^5.4.13:
-  version "5.4.13"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.4.13.tgz#dff934864577aa7c5c1b72c41b60999077cf78c2"
-  integrity sha512-4dgmFbtNECbW3ZMS6ha2pebinUzZo789scdccdyyajbmaunBPqZJqp6eO6pThIqDsgSOkRi4IrzkZm8kmhtZMA==
+mongoose@^5.4.14:
+  version "5.4.14"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.4.14.tgz#8cc074c9990db0a26062a779f461abb91c9c483c"
+  integrity sha512-lAISH4xdx0/o0bVWPB4bxApP3bA1b08oHPEjTBq3/mIr4R494hepDJJowByBgpGYf8tj/oe6VkFCx8wbRcOciA==
   dependencies:
     async "2.6.1"
     bson "~1.1.0"
@@ -7808,10 +7808,10 @@ regexpu-core@^4.1.3, regexpu-core@^4.2.0:
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.0.2"
 
-register-service-worker@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/register-service-worker/-/register-service-worker-1.6.1.tgz#d2c1ce7d826505d0f95c7423975f733aab92e6de"
-  integrity sha512-tVbrJh0y5+9CmYCvHOuIJflGgloUKRrw3zi/OPjiHO3ecvj8/qScVso4lxkDFj077o5ClrXbfuLlqIsiw2KdlQ==
+register-service-worker@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/register-service-worker/-/register-service-worker-1.6.2.tgz#9297e54c205c371c6e49bfa88f6997e8dd315f4c"
+  integrity sha512-I8L87fX2TK29LDx+wgyOUh2BJ3rDIRC1FtRZEHeP3rivzDv6p1DDZLGGtPucqjEkm45+2crtFIFssEWv56+9Wg==
 
 registry-auth-token@^3.0.1:
   version "3.3.2"
