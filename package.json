@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "@bugsnag/js": "^5.2.0",
-    "@bugsnag/node": "^5.2.0",
+    "@bugsnag/node": "^6.0.0",
     "@bugsnag/plugin-express": "^5.2.0",
     "@google/maps": "^0.5.5",
     "axios": "^0.18.0",
