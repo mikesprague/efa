@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": ">= 8.x",
-    "npm": ">= 5.x",
-    "yarn": ">= 1.x"
+    "node": ">= 11.10",
+    "npm": ">= 6.7",
+    "yarn": ">= 1.14.0"
   },
   "license": "MIT",
   "scripts": {
