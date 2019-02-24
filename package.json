@@ -15,7 +15,6 @@
     "build:dev": "yarn assets -d",
     "deploy:dev": "git push heroku master",
     "dev": "concurrently 'yarn watch' 'yarn assets:watch -d --color true --display minimal' --names '🖥 ,📦 ' --prefix '[{name}] '",
-    "postinstall": "yarn build",
     "start": "node ./index.js",
     "watch": "nodemon ./index.js --ignore public/",
     "watch:debug": "nodemon ./index.js --inspect --ignore public/"
@@ -24,6 +23,7 @@
     "last 2 years",
     "IE 11"
   ],
+  "heroku-run-build-script": true,
   "dependencies": {
     "@bugsnag/js": "^6.0.0",
     "@bugsnag/node": "^6.0.0",
