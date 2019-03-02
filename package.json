@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": ">= 11.10",
-    "npm": ">= 6.7",
-    "yarn": ">= 1.14.0"
+    "node": ">= 11.8",
+    "npm": ">= 6.5",
+    "yarn": ">= 1.13.0"
   },
   "license": "MIT",
   "scripts": {
@@ -47,7 +47,7 @@
     "jimp": "^0.6.0",
     "juice": "^5.1.0",
     "md5": "^2.2.1",
-    "mongoose": "^5.4.15",
+    "mongoose": "^5.4.16",
     "mongoose-mongodb-errors": "^0.0.2",
     "multer": "^1.4.1",
     "nodemailer": "^5.1.1",
@@ -61,12 +61,12 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
     "@babel/plugin-transform-object-assign": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
     "@babel/preset-env": "^7.3.1",
-    "@babel/runtime": "^7.3.1",
+    "@babel/runtime": "^7.3.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-regular-svg-icons": "5.7.2",
     "@fortawesome/free-solid-svg-icons": "5.7.2",
@@ -79,7 +79,7 @@
     "concurrently": "4.1.0",
     "css-loader": "^2.1.0",
     "cssnano": "^4.1.10",
-    "eslint": "^5.14.1",
+    "eslint": "^5.15.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-compat": "^2.7.0",
     "eslint-plugin-html": "^5.0.3",
@@ -94,7 +94,7 @@
     "prettier": "^1.16.4",
     "sass-loader": "^7.1.0",
     "terser-webpack-plugin": "^1.2.3",
-    "webpack": "^4.29.5",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
     "webpackbar": "^3.1.5"
   },
