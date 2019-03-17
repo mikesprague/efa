@@ -20,8 +20,8 @@
     "watch:debug": "nodemon ./index.js --inspect --ignore public/"
   },
   "browserslist": {
-    "development": ["last 2 versions", "IE 11"],
-    "production": ["last 3 years", "IE 10", "Safari 8"]
+    "development": ["last 2 versions"],
+    "production": ["last 3 years", "IE >= 10", "Safari >= 8"]
   },
   "heroku-run-build-script": true,
   "dependencies": {
