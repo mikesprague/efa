@@ -97,7 +97,7 @@ exports.register = async (req, res, next) => {
   next(); // move on to authController.login
 };
 
-exports.notifications = (req, res) => {
+exports.notificationsForm = (req, res) => {
   res.render('notifications', {
     title: 'Notifications',
   });
