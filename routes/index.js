@@ -10,7 +10,10 @@ router.get('/', (req, res) => {
 });
 
 router.get('/register', userController.registerForm);
-router.post('/register', userController.validateRegister, catchErrors(userController.register), authController.login);
+router.post('/register',
+  userController.validateRegister,
+  catchErrors(userController.register),
+  authController.login);
 router.get('/login', userController.loginForm);
 router.post('/login', userController.validateLogin, authController.login);
 router.get('/loggedIn', authController.isLoggedIn, authController.loggedIn);
