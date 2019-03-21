@@ -7,6 +7,7 @@
     "npm": ">= 6.x",
     "yarn": ">= 1.x"
   },
+  "repository": "github:mikesprague/whatdat",
   "license": "MIT",
   "scripts": {
     "assets": "webpack --display-max-modules 0 --color true",
