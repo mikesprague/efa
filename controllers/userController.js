@@ -85,6 +85,22 @@ exports.validateEmail = (req, res, next) => {
   next();
 };
 
+exports.validateNotification = (req, res, next) => {
+  // req.checkBody('email', 'You must supply a valid email').isEmail();
+  // need to finish building out
+  const errors = req.validationErrors();
+  if (errors) {
+    req.flash('error', errors.map(err => err.msg));
+    res.render('notifications', {
+      title: 'Notifications',
+      body: req.body,
+      flashes: req.flash(),
+    });
+    return;
+  }
+  next();
+};
+
 exports.register = async (req, res, next) => {
   const user = new User({
     email: req.body.email,
@@ -101,6 +117,10 @@ exports.notificationsForm = (req, res) => {
   res.render('notifications', {
     title: 'Notifications',
   });
+};
+
+exports.sendNotification = async (req, res) => {
+  // need to build out
 };
 
 exports.account = (req, res) => {

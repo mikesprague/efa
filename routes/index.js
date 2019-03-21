@@ -26,5 +26,9 @@ router.get('/account/reset/:token', catchErrors(authController.reset));
 router.post('/account/reset/:token', authController.confirmedPasswords, catchErrors(authController.update));
 
 router.get('/notifications', authController.isLoggedIn, userController.notificationForm);
+router.post('/notifications',
+  authController.isLoggedIn,
+  userController.validateNotification,
+  catchErrors(userController.sendNotification));
 
 module.exports = router;
