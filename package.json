@@ -29,6 +29,8 @@
     "@bugsnag/js": "^6.0.0",
     "@bugsnag/node": "^6.0.0",
     "@bugsnag/plugin-express": "^6.0.0",
+    "@casl/ability": "^3.0.1",
+    "@casl/mongoose": "2.3.1",
     "@google/maps": "^0.5.5",
     "axios": "^0.18.0",
     "connect-flash": "^0.1.1",
