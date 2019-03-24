@@ -5,6 +5,7 @@ import {
   focusFormField,
   initFoodPrefCheckboxes,
   initNotificationPhotoField,
+  initNotificationTimeField,
 } from './modules/form';
 
 // use try catches until I decide to split up files or conditionally load in one
@@ -31,4 +32,10 @@ try {
   focusFormField('#emailLogin');
 } catch (e) {
   // ignore
+}
+
+try {
+  initNotificationTimeField('#timeAvailable');
+} catch (e) {
+  console.log(e);
 }

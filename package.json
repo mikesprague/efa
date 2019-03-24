@@ -21,8 +21,14 @@
     "watch:debug": "nodemon ./index.js --inspect --ignore public/"
   },
   "browserslist": {
-    "development": ["last 2 versions"],
-    "production": ["last 3 years", "IE >= 10", "Safari >= 8"]
+    "development": [
+      "last 2 versions"
+    ],
+    "production": [
+      "last 3 years",
+      "IE >= 10",
+      "Safari >= 8"
+    ]
   },
   "heroku-run-build-script": true,
   "dependencies": {
@@ -56,7 +62,6 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1",
-    "pikaday": "^1.8.0",
     "pug": "^2.0.3",
     "register-service-worker": "^1.6.2",
     "slugs": "^0.1.3",

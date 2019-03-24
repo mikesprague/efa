@@ -35,3 +35,7 @@ export function initNotificationPhotoField(fileElementSelector, imgToShowPreview
     setPreviewImage(imgToShowPreviewSelector, imageData[0]);
   });
 }
+
+export function initNotificationTimeField(elementSelector) {
+  // jj
+}

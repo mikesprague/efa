@@ -10,6 +10,9 @@ mixin notificationForm(notification = {})
         //- if notification.photo
         img.photo-preview(src=`${notification.photo ? notification.photo : ''}`, alt="" width=200)
       .form-group
+        label(for="timeAvailable") Time Available
+        input.form-control#timeAvailable(type="text" name="timeAvailable" required)
+      .form-group
         label(for="address") Location
         input#address.form-control(type="text" name="location[address]" value=(notification.location && notification.location.address))
       .form-group.d-none
