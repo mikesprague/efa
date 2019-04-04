@@ -5637,10 +5637,10 @@ mongoose-mongodb-errors@^0.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-mongodb-errors/-/mongoose-mongodb-errors-0.0.2.tgz#7feacb8c901b5f899c616652337b2f499717291c"
   integrity sha1-f+rLjJAbX4mcYWZSM3svSZcXKRw=
 
-mongoose@^5.4.21:
-  version "5.4.21"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.4.21.tgz#59c201d48eea168dc2bd1748210998b2099e8e95"
-  integrity sha512-8teQZ/YUXv7+m5GaPDTmyoSJx7tPczZ99vM0/MS8GFCGVn8BKb5jQzuQCP62nBH4vN6Dmf0OiVKTFUkCpkVp+Q==
+mongoose@^5.4.22:
+  version "5.4.22"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.4.22.tgz#45000ea9aefa687dce1dc087db71b5084634d119"
+  integrity sha512-rbtmFmXe5YJfBrVfOpSW2xeSAKFtnJ5RLQjl4ULzT1icmY/SUHtJ5b+mW4SMCEk7whm/w+2oHO9qMBr8UI1xIw==
   dependencies:
     async "2.6.1"
     bson "~1.1.0"
