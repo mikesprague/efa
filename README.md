@@ -1,5 +1,6 @@
 # Extra Food App
 
+[![Known Vulnerabilities](https://snyk.io/test/github/mikesprague/localweather-io/badge.svg?targetFile=package.json)](https://snyk.io/test/github/mikesprague/extrafood?targetFile=package.json)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmikesprague%2Fextrafood.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmikesprague%2Fextrafood?ref=badge_shield)
 [![Greenkeeper badge](https://badges.greenkeeper.io/mikesprague/extrafood.svg)](https://greenkeeper.io/)
 
