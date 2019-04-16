@@ -3394,10 +3394,10 @@ eslint-plugin-html@^5.0.3:
   dependencies:
     htmlparser2 "^3.10.0"
 
-eslint-plugin-import@^2.17.1:
-  version "2.17.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.17.1.tgz#b888feb4d9b3ee155113c8dccdd4bec5db33bdf4"
-  integrity sha512-lzD9uvRvW4MsHzIOMJEDSb5MOV9LzgxRPBaovvOhJqzgxRHYfGy9QOrMuwHIh5ehKFJ7Z3DcrcGKDQ0IbP0EdQ==
+eslint-plugin-import@^2.17.2:
+  version "2.17.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.17.2.tgz#d227d5c6dc67eca71eb590d2bb62fb38d86e9fcb"
+  integrity sha512-m+cSVxM7oLsIpmwNn2WXTJoReOF9f/CtLMo7qOVmKd1KntBy0hEcuNZ3erTmWjx+DxRO0Zcrm5KwAvI9wHcV5g==
   dependencies:
     array-includes "^3.0.3"
     contains-path "^0.1.0"
@@ -5636,10 +5636,10 @@ mongoose-mongodb-errors@^0.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-mongodb-errors/-/mongoose-mongodb-errors-0.0.2.tgz#7feacb8c901b5f899c616652337b2f499717291c"
   integrity sha1-f+rLjJAbX4mcYWZSM3svSZcXKRw=
 
-mongoose@^5.5.1:
-  version "5.5.1"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.5.1.tgz#a256a08241a1412bb307b85e7ece25629d0b4bbe"
-  integrity sha512-sVDyzADl0RbNvoRWLL/zQDqoFGi1IaSo5+DpOwhvGgFs3pSsvmONPNW3JF1KvZerNkkkGFb8ZMuFBeKEiDqZLw==
+mongoose@^5.5.2:
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.5.2.tgz#6fa985ffe036e7cb641f7234465d7f162f14f827"
+  integrity sha512-GMSPlyy90vVSeNZbV8P4VAeKxgYhF5UgnO7wU5BCn/N6P7mSFp9+XPZyHTqJA8Uh2kO2gfwgm2QVPHrol/V6zA==
   dependencies:
     async "2.6.1"
     bson "~1.1.1"
