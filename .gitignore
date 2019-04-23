@@ -55,9 +55,9 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
-.env.test
-variables.env
+# .env
+# .env.test
+# variables.env
 variables.env.heroku
 
 # parcel-bundler cache (https://parceljs.org/)
