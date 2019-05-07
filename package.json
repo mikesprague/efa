@@ -78,7 +78,7 @@
     "@babel/runtime": "^7.4.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
     "@fortawesome/free-regular-svg-icons": "5.8.2",
-    "@fortawesome/free-solid-svg-icons": "5.8.1",
+    "@fortawesome/free-solid-svg-icons": "5.8.2",
     "@fullhuman/postcss-purgecss": "^1.2.0",
     "autoprefixer": "^9.5.1",
     "babel-loader": "^8.0.5",
