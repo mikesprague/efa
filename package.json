@@ -38,7 +38,7 @@
     "@bugsnag/node": "^6.3.0",
     "@bugsnag/plugin-express": "^6.3.0",
     "@google/maps": "^0.5.5",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.4",
@@ -55,7 +55,7 @@
     "jimp": "^0.6.4",
     "juice": "^5.2.0",
     "md5": "^2.2.1",
-    "mongoose": "^5.5.11",
+    "mongoose": "^5.5.12",
     "mongoose-mongodb-errors": "^0.0.2",
     "multer": "^1.4.1",
     "nodemailer": "^6.2.1",
@@ -67,7 +67,7 @@
     "slugs": "^0.1.3",
     "uuid": "^3.3.2",
     "validator": "^11.0.0",
-    "snyk": "^1.169.1"
+    "snyk": "^1.170.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
