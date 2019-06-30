@@ -8,7 +8,6 @@ const cookieParser = require('cookie-parser');
 const passport = require('passport');
 const { promisify } = require('es6-promisify');
 const flash = require('connect-flash');
-const expressValidator = require('express-validator');
 const bugsnag = require('@bugsnag/js');
 const bugsnagExpress = require('@bugsnag/plugin-express');
 
@@ -61,7 +60,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // exposes a bunch of methods for validating data. Used heavily on userController.validateRegister
-app.use(expressValidator());
+// app.use(expressValidator());
 
 // populates req.cookies with any cookies that came along with the request
 app.use(cookieParser());
