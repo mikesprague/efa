@@ -8,6 +8,66 @@
       "config": {
         "maxLambdaSize": "50mb"
       }
+    },
+    {
+      "src": "public/**",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/login",
+      "dest": "/index.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/loggedIn",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/logout",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/register",
+      "dest": "/index.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/account",
+      "dest": "/index.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/account/forgot",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/account/reset/*",
+      "dest": "/index.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/notifications",
+      "dest": "/index.js",
+      "methods": ["GET", "POST"]
+    },
+    {
+      "src": "/user",
+      "dest": "/index.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "public/$1"
     }
   ],
   "env": {
