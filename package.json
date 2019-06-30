@@ -14,7 +14,7 @@
     "assets:watch": "yarn assets -w",
     "build": "yarn assets -p",
     "build:dev": "yarn assets -d",
-    "deploy:dev": "git push heroku master",
+    "deploy:dev": "yarn build && now",
     "dev": "concurrently 'yarn watch' 'yarn assets:watch -d --color true --display minimal' --names '🖥 ,📦 ' --prefix '[{name}] '",
     "start": "node ./index.js",
     "watch": "nodemon ./index.js --ignore public/",
@@ -32,7 +32,6 @@
       "Safari >= 8"
     ]
   },
-  "heroku-run-build-script": true,
   "dependencies": {
     "@bugsnag/js": "^6.3.2",
     "@bugsnag/node": "^6.3.1",
