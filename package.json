@@ -27,9 +27,7 @@
       "last 2 versions"
     ],
     "production": [
-      "last 3 years",
-      "IE >= 10",
-      "Safari >= 8"
+      "defaults"
     ]
   },
   "dependencies": {
