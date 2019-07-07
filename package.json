@@ -20,7 +20,7 @@
     "watch": "nodemon ./index.js --ignore public/",
     "watch:debug": "nodemon ./index.js --inspect --ignore public/",
     "snyk-protect": "snyk protect",
-    "prepublish": "yarn snyk-protect"
+    "prepublish": "npm run snyk-protect; yarn snyk-protect"
   },
   "browserslist": {
     "development": [
