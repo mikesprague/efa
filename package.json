@@ -20,7 +20,7 @@
     "watch": "nodemon ./index.js --ignore public/",
     "watch:debug": "nodemon ./index.js --inspect --ignore public/",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect; yarn snyk-protect"
+    "prepublish": "yarn snyk-protect"
   },
   "browserslist": {
     "development": [
@@ -67,12 +67,12 @@
     "validator": "^11.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
+    "@babel/core": "^7.5.4",
     "@babel/plugin-proposal-class-properties": "^7.5.0",
     "@babel/plugin-transform-object-assign": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.5.0",
-    "@babel/preset-env": "^7.5.3",
-    "@babel/runtime": "^7.5.3",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/runtime": "^7.5.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-regular-svg-icons": "5.9.0",
     "@fortawesome/free-solid-svg-icons": "5.9.0",
