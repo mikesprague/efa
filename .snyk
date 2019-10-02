@@ -73,3 +73,10 @@ patch:
         patched: '2019-10-01T16:06:55.004Z'
     - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-10-01T16:06:55.004Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - '@google/maps > https-proxy-agent':
+        patched: '2019-10-02T13:36:11.340Z'
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-02T13:36:11.340Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-02T13:36:11.340Z'
