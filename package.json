@@ -97,7 +97,7 @@
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
     "nodemon": "^1.19.4",
-    "now": "^16.4.3",
+    "now": "^16.4.4",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
