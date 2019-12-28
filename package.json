@@ -24,10 +24,12 @@
   },
   "browserslist": {
     "development": [
-      "last 2 versions"
+      "last 1 version1"
     ],
     "production": [
-      "defaults"
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 10"
     ]
   },
   "dependencies": {
