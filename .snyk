@@ -73,6 +73,28 @@ patch:
         patched: '2019-10-01T16:06:55.004Z'
     - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-10-01T16:06:55.004Z'
+    - pug > pug-filters > constantinople > babel-types > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - pug > pug-code-gen > constantinople > babel-types > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - pug > pug-code-gen > pug-attrs > constantinople > babel-types > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-01-21T18:56:39.828Z'
   SNYK-JS-HTTPSPROXYAGENT-469131:
     - '@google/maps > https-proxy-agent':
         patched: '2019-10-02T13:36:11.340Z'
