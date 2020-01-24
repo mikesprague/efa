@@ -55,6 +55,7 @@
     "jimp": "^0.9.3",
     "juice": "^6.0.0",
     "md5": "^2.2.1",
+    "mongodb": "^3.5.2",
     "mongodb-client-encryption": "^1.0.1",
     "mongoose": "^5.8.9",
     "mongoose-mongodb-errors": "^0.0.2",
