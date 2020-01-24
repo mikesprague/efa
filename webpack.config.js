@@ -14,12 +14,12 @@ const config = {
   entry: [
     './public/javascripts/main.js',
   ],
-  devtool: 'source-map',
+  // devtool: 'source-map',
   optimization: {
     minimizer: [
       new TerserPlugin({
         parallel: true,
-        sourceMap: true,
+        // sourceMap: true,
       }),
       new OptimizeCSSAssetsPlugin(),
     ],
@@ -51,13 +51,13 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              // sourceMap: true,
             },
           },
           {
             loader: 'postcss-loader',
             options: {
-              sourceMap: true,
+              // sourceMap: true,
               plugins() {
                 return [
                   autoprefixer(),
@@ -75,7 +75,7 @@ const config = {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              // sourceMap: true,
             },
           },
         ],
