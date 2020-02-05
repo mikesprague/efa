@@ -37,7 +37,7 @@ exports.validateRegister = (req, res, next) => {
   body('passwordConfirm', 'Your passwords do not match').equals(req.body.password);
   const errors = validationResult(req);
   if (errors.length) {
-    req.flash('error', errors.map(err => err.msg));
+    req.flash('error', errors.map((err) => err.msg));
     res.render('register', {
       title: 'Register',
       body: req.body,
@@ -59,7 +59,7 @@ exports.validateLogin = (req, res, next) => {
   body('password', 'You must supply your password').not().isEmpty();
   const errors = validationResult(req);
   if (errors.length) {
-    req.flash('error', errors.map(err => err.msg));
+    req.flash('error', errors.map((err) => err.msg));
     res.render('login', {
       title: 'Login',
       body: req.body,
@@ -79,7 +79,7 @@ exports.validateEmail = (req, res, next) => {
   });
   const errors = validationResult(req);
   if (errors.length) {
-    req.flash('error', errors.map(err => err.msg));
+    req.flash('error', errors.map((err) => err.msg));
     res.render('login', {
       title: 'Login',
       body: req.body,
@@ -95,7 +95,7 @@ exports.validateNotification = (req, res, next) => {
   // need to finish building out
   const errors = validationResult(req);
   if (errors.length) {
-    req.flash('error', errors.map(err => err.msg));
+    req.flash('error', errors.map((err) => err.msg));
     res.render('notifications', {
       title: 'Notifications',
       body: req.body,
