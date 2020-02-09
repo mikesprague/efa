@@ -91,3 +91,5 @@ variables.env.heroku
 .env.sample
 
 public/dist
+
+.now
