@@ -36,7 +36,7 @@
   "dependencies": {
     "@bugsnag/js": "^6.5.2",
     "@bugsnag/node": "^6.5.2",
-    "@bugsnag/plugin-express": "^6.5.1",
+    "@bugsnag/plugin-express": "^7.0.0",
     "@google/maps": "^1.1.0",
     "axios": "^0.19.2",
     "connect-flash": "^0.1.1",
