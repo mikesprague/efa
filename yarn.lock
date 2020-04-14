@@ -956,6 +956,17 @@
     pump "^3.0.0"
     stack-generator "^2.0.3"
 
+"@bugsnag/node@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/node/-/node-7.0.0.tgz#99102cf4092c27aae5ed0b771293f5089540ebc6"
+  integrity sha512-YmedKskqv9yfxf3FH8P8UPQncyg0YCWbhcvPVAIw/g/Bbl/5EJjMjcFt5TNZWg94p1IRnXyll5vBL+KErCvOVA==
+  dependencies:
+    byline "^5.0.0"
+    error-stack-parser "^2.0.2"
+    iserror "^0.0.2"
+    pump "^3.0.0"
+    stack-generator "^2.0.3"
+
 "@bugsnag/plugin-express@^6.5.1":
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/@bugsnag/plugin-express/-/plugin-express-6.5.1.tgz#4a9810641e7172f412d75052521febf3d545baeb"
