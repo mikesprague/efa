@@ -956,10 +956,10 @@
     pump "^3.0.0"
     stack-generator "^2.0.3"
 
-"@bugsnag/plugin-express@^6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@bugsnag/plugin-express/-/plugin-express-6.5.1.tgz#4a9810641e7172f412d75052521febf3d545baeb"
-  integrity sha512-jMrNPUvTAu85nCKilbxzrr/WVR1FRIb/S0VOGIOmG6MIOceM1AURughFohhxBZ4hs1jtMt9RU3ao67Xpb0XhEw==
+"@bugsnag/plugin-express@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@bugsnag/plugin-express/-/plugin-express-7.0.0.tgz#977501f5f3c233a064efb84f0a1faf20ea2cb584"
+  integrity sha512-lDJBORPe0yNSn3s7oJ/6yBavPBg/JzRNkkGZ1p8iesX+Cc/2D9U52twTSCnqA/Uf5TVznX4o2ltEKhYNhqn54Q==
   dependencies:
     iserror "^0.0.2"
 
