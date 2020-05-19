@@ -34,8 +34,8 @@
     ]
   },
   "dependencies": {
-    "@bugsnag/js": "^7.0.0",
-    "@bugsnag/node": "^7.0.0",
+    "@bugsnag/js": "^7.0.1",
+    "@bugsnag/node": "^7.0.1",
     "@bugsnag/plugin-express": "^7.0.1",
     "@google/maps": "^1.1.0",
     "axios": "^0.19.2",
