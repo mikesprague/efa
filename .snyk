@@ -167,3 +167,15 @@ patch:
         patched: '2020-05-01T00:39:36.742Z'
     - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
         patched: '2020-05-01T00:39:36.742Z'
+    - pug > pug-code-gen > constantinople > @babel/types > lodash:
+        patched: '2020-05-26T20:33:48.500Z'
+    - pug > pug-filters > constantinople > @babel/types > lodash:
+        patched: '2020-05-26T20:33:48.500Z'
+    - pug > pug-code-gen > with > babel-types > lodash:
+        patched: '2020-05-26T20:33:48.500Z'
+    - pug > pug-code-gen > pug-attrs > constantinople > @babel/types > lodash:
+        patched: '2020-05-26T20:33:48.500Z'
+    - pug > pug-code-gen > with > babylon-walk > babel-types > lodash:
+        patched: '2020-05-26T20:33:48.500Z'
+    - express-validator > lodash:
+        patched: '2020-05-26T20:33:48.500Z'
