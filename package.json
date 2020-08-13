@@ -34,15 +34,15 @@
     ]
   },
   "dependencies": {
-    "@bugsnag/js": "^7.1.1",
-    "@bugsnag/node": "^7.1.1",
+    "@bugsnag/js": "^7.2.1",
+    "@bugsnag/node": "^7.2.1",
     "@bugsnag/plugin-express": "^7.2.1",
     "@google/maps": "^1.1.3",
     "axios": "^0.19.2",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.2.0",
     "cookie-parser": "^1.4.5",
-    "dayjs": "^1.8.28",
+    "dayjs": "^1.8.30",
     "dompurify": "^2.0.12",
     "dotenv": "^8.2.0",
     "es6-promisify": "^6.1.1",
